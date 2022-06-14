@@ -71,3 +71,31 @@ header {
 .contacts_item > li > span {
   color: var(--text-color);
 }
+
+main {
+  display: flex;
+}
+
+section {
+  padding: 40px 0 10px;
+}
+
+.column {
+  padding: 0 30px 0 40px;
+  width: 60%;
+  background-color: var(--white);
+}
+
+.column > section > h2 {
+  color: var(--main-color);
+  border-bottom: 3px solid var(--main-color);
+}
+
+.education_date {
+  font-weight: 600;
+  color: var(--yellow);
+}
+
+.code_example > pre {
+  white-space: pre-line;
+}
