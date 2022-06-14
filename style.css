@@ -1,0 +1,169 @@
+:root {
+  --main-color: #4daf18e1;
+  --text-color: #2f2d2d;
+  --yellow: #ffb20af8;
+  --white: #ffffff;
+  --gray: #5d5959;
+  --column-color: #f3eded;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: 'Arial', 'Arimo';
+  font-style: normal;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.2;
+  color: var(--text-color);
+}
+
+*, *::after, *::before {
+  box-sizing: inherit;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  box-shadow: 0 0 10px 5px var(--gray);
+}
+
+header {
+  background-color: var(--main-color);
+}
+
+.header_wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.header_information {
+  width: 60%;
+  background-color: var(--column-color);
+  padding: 0 30px 0 40px;
+}
+
+.header_title {
+  color: var(--main-color);
+}
+
+.header_subtitle {
+  color: var(--yellow);
+}
+
+.contacts_section {
+  padding: 0 30px 0 40px;
+}
+
+.contacts_item > li {
+  margin: 20px 0;
+  color: var(--white);
+}
+
+.contacts_item > li > span {
+  color: var(--text-color);
+}
+
+main {
+  display: flex;
+}
+
+section {
+  padding: 40px 0 10px;
+}
+
+.column {
+  padding: 0 30px 0 40px;
+  width: 60%;
+  background-color: var(--white);
+}
+
+.column > section > h2 {
+  color: var(--main-color);
+  border-bottom: 3px solid var(--main-color);
+}
+
+.education_date {
+  font-weight: 600;
+  color: var(--yellow);
+}
+
+.code_example > pre {
+  white-space: pre-line;
+}
+
+.right_column {
+  width: 40%;
+  background-color: var(--column-color);
+}
+
+.skill_item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  list-style: none;
+}
+
+.skill_progress {
+  display: flex;
+  flex-direction: row;
+}
+
+.skill_text, .language_text {
+  width: 120px;
+}
+
+.progress_level, .progress_level_gray {
+  list-style: none;
+}
+
+.progress_level::before {
+  content: '\272D';
+  color: var(--yellow);
+}
+
+.progress_level_gray::before {
+  content: '\272D';
+  color: var(--gray);
+}
+
+.languages_list_item {
+  display: flex;
+  list-style: none;
+}
+
+.language_level {
+  color: var(--yellow);
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 40px;
+  background-color: var(--main-color);
+}
+
+.github_link {
+  text-decoration: none;
+  color: var(--white);
+}
+
+.github_link:hover {
+  border-bottom: 1px solid var(--white);
+}
+
+.year {
+  color: var(--white);
+  font-weight: 500;
+}
