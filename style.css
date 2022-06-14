@@ -99,3 +99,47 @@ section {
 .code_example > pre {
   white-space: pre-line;
 }
+
+.right_column {
+  width: 40%;
+  background-color: var(--column-color);
+}
+
+.skill_item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  list-style: none;
+}
+
+.skill_progress {
+  display: flex;
+  flex-direction: row;
+}
+
+.skill_text, .language_text {
+  width: 120px;
+}
+
+.progress_level, .progress_level_gray {
+  list-style: none;
+}
+
+.progress_level::before {
+  content: '\272D';
+  color: var(--yellow);
+}
+
+.progress_level_gray::before {
+  content: '\272D';
+  color: var(--gray);
+}
+
+.languages_list_item {
+  display: flex;
+  list-style: none;
+}
+
+.language_level {
+  color: var(--yellow);
+}
