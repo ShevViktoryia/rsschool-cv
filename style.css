@@ -1,6 +1,73 @@
-h1, h2, h3, h4, h5, h6 {
-  margin: 0;
-  padding: 0;
+:root {
+  --main-color: #4daf18e1;
+  --text-color: #2f2d2d;
+  --yellow: #ffb20af8;
+  --white: #ffffff;
+  --gray: #5d5959;
+  --column-color: #f3eded;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: 'Arial', 'Arimo';
   font-style: normal;
+  font-size: 16px;
   font-weight: 400;
+  line-height: 1.2;
+  color: var(--text-color);
+}
+
+*, *::after, *::before {
+  box-sizing: inherit;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+header {
+  background-color: var(--main-color);
+}
+
+.header_wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.header_information {
+  width: 60%;
+  background-color: var(--column-color);
+  padding: 0 30px 0 40px;
+}
+
+.header_title {
+  color: var(--main-color);
+}
+
+.header_subtitle {
+  color: var(--yellow);
+}
+
+.contacts_section {
+  padding: 0 30px 0 40px;
+}
+
+.contacts_item > li {
+  margin: 20px 0;
+  color: var(--white);
+}
+
+.contacts_item > li > span {
+  color: var(--text-color);
 }
