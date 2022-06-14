@@ -33,6 +33,7 @@ li {
 .wrapper {
   max-width: 1200px;
   margin: 0 auto;
+  box-shadow: 0 0 10px 5px var(--gray);
 }
 
 header {
@@ -142,4 +143,27 @@ section {
 
 .language_level {
   color: var(--yellow);
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 40px;
+  background-color: var(--main-color);
+}
+
+.github_link {
+  text-decoration: none;
+  color: var(--white);
+}
+
+.github_link:hover {
+  border-bottom: 1px solid var(--white);
+}
+
+.year {
+  color: var(--white);
+  font-weight: 500;
 }
