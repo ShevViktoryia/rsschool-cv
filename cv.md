@@ -61,6 +61,23 @@ Array.prototype.filter = function(callback, args) {
 }
 ```
 
+### Experience
+
+---
+
+- CMS Bitrix (PHP, JS)
+- Frontend development
+- Online courses
+
+### Education
+
+---
+
+- **University:** Gomel State University
+- **Courses:**
+  - Udemy (Javascript - completed; React, Vue and TypeScript - in progress )
+  - RSSchool
+
 ### Foreign languages
 
 ---
