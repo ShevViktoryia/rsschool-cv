@@ -130,3 +130,59 @@ header {
   height: 100px;
   object-fit: contain;
 }
+
+.projects-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+.project {
+  width: 28%;
+  height: 200px;
+  border-radius: 10px;
+  box-shadow: 0 0 7px 8px rgba(0, 0, 0, 0.9);
+  position: relative;
+  transition: 1s;
+}
+
+.project:first-of-type {
+  background: url("./img/bookmark-preview.png") center/cover no-repeat;
+}
+
+.project:nth-of-type(2) {
+  background: url("./img/todo-preview.png") center/cover no-repeat;
+}
+
+.project:last-of-type {
+  background: url("./img/plants-preview.png") center/cover no-repeat;
+}
+
+.project-description {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(5px);
+}
+
+.project-description a {
+  font-size: 30px;
+  color: #865dff;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.project:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  box-shadow: 0 0 10px #865dff;
+}
