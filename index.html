@@ -116,7 +116,7 @@
           </li>
         </ul>
       </section>
-      <sectioin class="projects wrapper" id="projects">
+      <section class="projects wrapper" id="projects">
         <h2 class="section-title">Project examples</h2>
         <ul class="projects-list">
           <li class="project">
@@ -147,29 +147,31 @@
             </p>
           </li>
         </ul>
-      </sectioin>
+      </section>
       <section class="code-example wrapper" id="code">
         <h2 class="section-title">Code example</h2>
-        <code class="code-field">
+        <div class="code-field">
           <p class="task-description">
             Your Task Implement our beloved Array,prototype.filter from scratch.
           </p>
           <pre>
-            Array.prototype.filter = function(callback, args) {
-              const len = this.length;
-              const newArr = new Array();
-              for(let i = 0; i < len; i++) {
-                let res = callback.call(args, this[i], i, this);
-                if(i in this) {
-                  if(res) {
-                    newArr.push(this[i]);
+            <code>
+              Array.prototype.filter = function(callback, args) {
+                const len = this.length;
+                const newArr = new Array();
+                for(let i = 0; i &lt; len; i++) {
+                  let res = callback.call(args, this[i], i, this);
+                  if(i in this) {
+                    if(res) {
+                      newArr.push(this[i]);
+                    }
                   }
                 }
+                return newArr;
               }
-              return newArr;
-            }
+            </code>
           </pre>
-        </code>
+        </div>
       </section>
     </main>
     <footer class="wrapper">
