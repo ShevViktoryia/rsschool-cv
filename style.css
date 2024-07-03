@@ -159,6 +159,12 @@ header {
   object-fit: contain;
 }
 
+.projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .projects-list {
   display: flex;
   align-items: center;
@@ -277,7 +283,7 @@ header {
 }
 
 footer {
-  height: 40vh;
+  height: 300px;
   padding: 30px 20px 0px !important;
   width: 100%;
   display: flex;
