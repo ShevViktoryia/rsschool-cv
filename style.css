@@ -259,6 +259,16 @@ header {
   font-size: 40px;
 }
 
+.language-level {
+  list-style: disc;
+  margin-left: 15px;
+}
+
+.language-level li::marker {
+  font-size: 20px;
+  color: #865dff;
+}
+
 @keyframes pulsar {
   0% {
     box-shadow: 0 0 10px #865dff;
